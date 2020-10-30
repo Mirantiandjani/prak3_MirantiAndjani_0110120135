@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Takeit</title>
+</head>
+<body>
+    <form action="proses.php" method="POST">
+        <fieldset style = "background-color: white;">
+            <legend>Form to order Take It</legend>
+            <img src="image/logotakeit.png" alt="" , width="150" height="100">
+            <h1>Kirim paket dengan cepat tanpa ribet!</h1>
+            <h3>Kirim paket bebas waktu kapan saja dengan kecepatan premium bersama Take It.</h3>
+            <hr>
+            <div>
+                <h4>Silahkan lengkapi formulir dibawah ini untuk pengantaran barang.. terima kasih :)</h4>
+                <h4 style= "color : red">Data Pengirim</h4>
+
+            <!-- Form Name -->
+            <div class = "form-group">
+                <label class="col-md-4 control-label" for="textinput">Nama</label>  
+                <div class="col-md-4">
+                <input id="textinput" name="textinput" type="text" class="form-control input-md" required="">
+                <br><br>
+                </div>
+            </div>
+
+            <!-- Multiple Checkboxes -->
+           <div class = "form-group">
+            <label-class="col-md-4 control-label" for="Jenis Paket">Jenis Paket</label>
+            <div class="col-md-4">
+              <select id="Jenis Paket" name="Jenis Paket" class="form-control">
+                <option value="1">General</option>
+                <option value="2">Premium</option>
+                <option value="3">Cepat</option>
+              </select>
+              <br><br>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="checkboxes">Status Barang :</label>
+            <div class="col-md-4">
+            <div class="checkbox">
+              <label for="checkboxes-0">
+                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+                Barang Pecah Belah
+              </label>
+              </div>
+            <div class="checkbox">
+              <label for="checkboxes-1">
+                <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+                Dokumen Berharga
+              </label>
+              </div>
+            <div class="checkbox">
+              <label for="checkboxes-2">
+                <input type="checkbox" name="checkboxes" id="checkboxes-2" value="3">
+                Elektronik
+              </label>
+              </div>
+            <div class="checkbox">
+              <label for="checkboxes-3">
+                <input type="checkbox" name="checkboxes" id="checkboxes-3" value="4">
+                Makanan
+              </label>
+              <br><br>
+              </div>
+            </div>
+          </div>
+
+          <!-- Multiple Radios -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="radios">Cabang :</label>
+            <div class="col-md-4">
+            <div class="radio">
+              <label for="radios-0">
+                <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+                Kantor Pusat
+              </label>
+              </div>
+            <div class="radio">
+              <label for="radios-1">
+                <input type="radio" name="radios" id="radios-1" value="2">
+                Jakarta
+              </label>
+              </div>
+            <div class="radio">
+              <label for="radios-2">
+                <input type="radio" name="radios" id="radios-2" value="3">
+                Meruya
+              </label>
+              </div>
+            <div class="radio">
+              <label for="radios-3">
+                <input type="radio" name="radios" id="radios-3" value="4">
+                Tanggerang
+              </label>
+              <br><br>
+              </div>
+            </div>
+          </div>
+
+          <!-- Textarea -->
+           <div>
+            <label for="alamat_pengirim">Alamat Pengirim</label><br>
+            <textarea name="" id="" cols="50" rows="3"></textarea>
+            <br><br>
+           </div>
+
+           <!-- Text input-->
+           <div>
+            <label for="provinsi">Provinsi</label><br>
+            <input id="provinsi" type = "Text">
+            <br><br>
+           </div>
+
+           <div>
+            <label for="kota/kabupaten">Kota/Kabupaten</label><br>
+            <input id="kota/kabupaten" type = "Text">
+            <br><br>
+           </div>
+
+           <div>
+            <label for="kode pos">Kode Pos</label><br>
+            <input id="kode_pos" type = "Text">
+            <br><br>
+           </div>
+
+           <div>
+            <label for="nomer_telepon">Nomer Telepon</label><br>
+            <input id="nomer_telepon" type = "Text">
+            <br><br>
+           </div>
+ 
+           <!-- Email-->
+           <div>
+            <label for="email">Email</label><br>
+            <input id="email" type = "Text">
+            <br><br>
+           </div>
+
+           <!-- File Button --> 
+           <div class="form-group">
+            <label class="col-md-4 control-label" for="filebutton">Upload Bukti Pembayaran :</label>
+            <div class="col-md-4">
+              <input id="filebutton" name="filebutton" class="input-file" type="file">
+            </div>
+          </div>
+           <hr/>
+           
+           
+           <div>
+               <h4 style= "color : red">Data Penerima</h4>
+               <div class = "form-group">
+                <label class="col-md-4 control-label" for="textinput">Nama</label>  
+                <div class="col-md-4">
+                <input id="textinput" name="textinput" type="text" class="form-control input-md" required="">
+                <br><br>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div>
+                <label for="alamat_pengirim">Alamat Penerima</label><br>
+                <textarea name="" id="" cols="50" rows="3"></textarea>
+                <br><br>
+            </div>
+
+            <div>
+                <label for="provinsi">Provinsi</label><br>
+                <input id="provinsi" type = "Text">
+                <br><br>
+            </div>
+
+            <div>
+                <label for="kota/kabupaten">Kota/Kabupaten</label><br>
+                <input id="kota/kabupaten" type = "Text">
+                <br><br>
+            </div>
+
+            <div>
+                <label for="kode pos">Kode Pos</label><br>
+                <input id="kode_pos" type = "Text">
+                <br><br>
+            </div>
+
+            <div>
+                <label for="nomer_telepon">Nomer Telepon</label><br>
+                <input id="nomer_telepon" type = "Text">
+                <br><br>
+            </div>
+
+            <!-- Email-->
+            <div>
+                <label for="email">Email</label><br>
+                <input id="email" type = "Text">
+                <br><br>
+            </div>
+
+            <input type="Submit"  value ="Submit">
+
+</body>
+</html>
